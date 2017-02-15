@@ -1,0 +1,61 @@
+.blockquote{
+	padding: 100px 10px;
+
+	&__arrow-left{
+		float: left;
+		margin-top: 5%;
+		margin-right: 6%;
+	}
+
+	&__arrow-right{
+		float: right;
+		margin-top: 5%;
+		margin-left: 6%;
+	}
+
+	&__img{
+		display: inline-block;
+		height: 150px;
+		width: 12.5%;
+		border-radius: 50%;
+		background: url(img/blockquote/bg-1.png) no-repeat center;
+		background-color: #000;
+		vertical-align: middle;
+	}
+
+	&__info{
+		display: inline-block;
+		overflow: none;
+		width: 70%;
+		vertical-align: middle;
+		padding-left: 2.5%;
+
+		&-text{
+		overflow: visible;/*что за хуйня*/
+		display: block;
+		font-size: 18px;
+		font-family: r-i;
+		color: rgb(153,153,153);
+		text-align: left;
+		line-height: 20px;
+		padding-bottom: 2.3%;
+		}
+
+		&-line{
+			.red_row();
+			display: inline-block;
+			margin: 0;
+			vertical-align: middle;
+			margin-left: 2.4%;
+		}
+
+		&-name{
+			display: inline-block;
+			font-size: 23px;
+			font-family: k-r;
+			color: #000;
+			vertical-align: middle;
+			padding-left: 1.19%;
+		}
+	}
+}

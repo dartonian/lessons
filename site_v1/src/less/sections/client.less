@@ -1,0 +1,79 @@
+.client{
+	padding: 0 4% 9.3% 4%;
+	background-color: rgb(210, 252, 247);
+
+	&__head{
+		.up-title;
+	}
+
+	&__foot{
+		.down-title;
+	}
+
+	&__line{
+		.red_row();
+	}
+
+	&__main{
+		background-color: 183, 247, 156;
+		padding-top: 7.1%;
+
+		&-box{
+			display: inline-block;
+			width: 43%;
+			font-size: 0;
+			margin-left: 5%;
+
+			&_margin{
+				margin-top: 5%;
+			}
+
+			&-img{
+				display: inline-block;
+				width: 23.3%;
+				height: 120px;
+				border-radius: 50%;
+				vertical-align: top;
+				background: #000;
+				margin-top: -2%; 
+			}
+
+			&-info{
+				display: inline-block;
+				vertical-align: middle;
+				width: 70%;
+				margin-left: 5.8%;
+
+				&-name{
+				font-size: 12px;
+				font-family: m-r;
+				text-transform: uppercase;
+				color: #000;
+				}
+
+				&-post{
+				font-size: 12px;
+				font-family: r-i;
+				color: #000;
+				padding-top: 2.7%;
+				padding-bottom: 5.4%;
+				}
+
+				&-line{
+					.red_row();
+					margin: 0;
+				}
+
+				&-text{
+				width: 70%; 
+				font-size: 12px;
+				font-family: r-r;
+				line-height: 12px;
+				text-align: left;
+				padding-top: 5.4%;
+				color: rgb(179,179,179);
+				}
+			}
+		}
+	}
+}

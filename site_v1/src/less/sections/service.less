@@ -1,0 +1,116 @@
+.service{
+	padding-top: 110px;
+
+	&__head{
+		.up-title;
+		padding-top: 0;
+	}
+
+	&__foot{
+		.down-title;
+	}
+
+	&__line{
+		.red_row();
+		padding-bottom: 45px;
+	}
+
+	&__text{
+		.text-roboto;
+		display: block;
+		text-align: center;
+		padding-bottom: 95px;
+		width: 70%;
+		margin: 0 auto;
+	}
+
+	&__blog{
+
+		&-picture{
+			display: inline-block;
+			background: url(../img/service/slide-img.png);
+			width: 47.5%;
+			height: 380px;
+			margin-right: 20px;
+
+		}
+
+		&-app{
+
+			display: inline-block;
+			list-style: none;
+			vertical-align: top;
+
+			&-item{
+				margin: 0 17px 0 17px;/*оставил в px*/
+				width: 231.5%;/*почему такой большой %*/
+				border:	1px solid rgb(202,202,202);
+				text-transform: uppercase;
+				font-size: 12px;
+				font-family: m-b;
+				margin-bottom: 5px;
+				line-height: 50px;
+				outline: none;
+				margin-bottom: 10px;
+
+				&:hover{
+					background-color: rgb(25, 166, 145);
+					transition: 0.3s all ease;
+				}
+
+				&-drop{
+						display: none;
+							
+					&-click{
+						list-style: none;
+					
+					}
+				}
+				
+			}
+
+
+			&-img{
+				display: inline-block;
+				vertical-align: middle;
+				padding-right: 10px;
+				padding-left: 17px;
+			}
+
+			&-arrow{
+				display: inline-block;
+				float: right;
+				padding-top: 4%;
+				padding-right: 17px;
+			}
+		}
+	}
+}
+
+.service__blog-app-item:focus > .service__blog-app-item-drop {
+					display: block;
+					background-color: #fff;
+					text-transform: none;
+					color: rgb(202,202,202);
+					font-size: 14px;
+					text-align: center;
+					height: 150px;
+					overflow:auto;
+					font-family: r-i;
+					border-top: 1px solid rgb(202,202,202);
+					line-height: 27px;
+					padding: 10px 20px 20px 20px;
+					list-style:none;
+}
+
+.service__blog-app-item:focus .service__blog-app-arrow{
+	display: inline-block;
+	transform: rotate(-180deg);
+	transition: 0.3s all ease;
+	margin-top: 4%;
+	margin-right: 17px;
+	height: 30px;
+	background: red;
+	box-sizing: border-box;
+/*почему пришлось так делать 1px и все ломается*/
+}

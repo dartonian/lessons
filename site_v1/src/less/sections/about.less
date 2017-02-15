@@ -1,0 +1,90 @@
+.about{
+	padding-bottom: percentage(95/@layout-width-middle);
+
+	&__header {
+		.up-title;
+	}
+
+	&__title {
+		.down-title;
+		margin-top: percentage(25/@layout-width-middle);
+	}
+
+	&__line {
+		.red_row();
+		margin-left: 47.5%;
+	}
+
+	&__text{
+		.text-roboto;
+		padding-top: percentage(47/@layout-width-middle);
+		padding-bottom: percentage(100/@layout-width-middle);
+	}
+
+	&__slide{
+			width: 100%;
+
+		&-inside{
+			float: left;
+			display: inline-block;
+			width: percentage(380/@layout-width-middle);
+			height: 250px;
+			background-color: rgb(129,225,211);
+			
+
+			&-img1{
+				float: left;
+				margin-top: percentage(-30/@layout-width-middle);
+				margin-left: percentage(-30/@layout-width-middle);
+				background: url(../img/about/image1.png);
+			    width: 380px;/*почему через проценты не задается везде*/
+				height: 250px;
+
+				&-icon{
+					display: block;
+					margin: 30% 0 0 46%;
+					padding-bottom: percentage(20/@layout-width-middle);
+				}
+
+				&-click{
+					display: block;
+					text-transform: uppercase;
+					text-decoration:none;
+					font-family: m-b;
+					font-size: 15px;
+					color: #fff;
+					margin: 0 auto;
+					text-align: center;
+					width: 30%;
+
+					&:hover{
+					    color: #000;
+						border-right: 2px solid #000;
+						border-left: 2px solid #000;
+						border-top: 2px solid #FFF;
+						border-bottom: 2px solid #FFF;
+						transition: 0.1s all ease;
+						box-sizing: border-box;
+					}
+				}
+			}
+		}
+
+		&-img2{
+			background: url(../img/about/image2.png) no-repeat center;
+			display: inline-block;
+			width: percentage(380/@layout-width-middle);
+			height: 250px;
+			margin-left: percentage(25/@layout-width-middle);
+		}
+
+		&-img3{
+				background: url(../img/about/image3.png);
+				display: inline-block;
+				width: percentage(380/@layout-width-middle);
+				height: 250px;
+				margin-left: percentage(25/@layout-width-middle);
+				
+		}
+	}
+}

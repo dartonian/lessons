@@ -1,0 +1,57 @@
+.quote{
+	margin-top: 70px;/*почему не сработал padding-bottom у верхнего блока ???*/
+	padding: 5.2%  5%;
+	background: rgb(248,248,248);
+
+	&__arrow-left{
+		float: left;
+		margin-top: 5.9%;
+		margin-right: 5.9%;
+
+	}
+
+	&__arrow-right{
+		float: right;
+		margin-top: 5.9%;
+	}
+
+	&__content{
+
+			&-icon{
+				background: url(../img/quote/message.png) no-repeat center;
+				display: inline-block;
+				width: percentage(150/@layout-width-middle);
+				height: 150px;
+				border: 3px solid rgb(149,225,211);
+			}
+
+		&-info{
+			display: inline-block;
+			width: 60%;
+			padding-left: percentage(60/@layout-width-middle);
+			vertical-align: top;
+
+			&-text{
+				font-size: 19px;
+				font-family: r-i;
+				color: rgb(153,153,153);
+				line-height: 30px;
+				padding-bottom: 30px;
+			}
+
+			&-line{
+				.red_row();
+				display: inline-block;
+				margin: 0;
+			}
+
+			&-name{
+				display: inline-block;
+				vertical-align: middle;
+				font-size: 22px;
+				font-family: k-r;
+				color: #000;
+			}
+		}
+	}	
+}

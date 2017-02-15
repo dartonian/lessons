@@ -1,0 +1,113 @@
+.story{
+	padding-bottom: 8.51%;
+
+	&__head{
+		.up-title;
+	}
+
+	&__foot{
+		.down-title;
+	}
+
+	&__line{
+		.red_row();
+	}
+
+	&__main{
+		padding-top: 3.9%;
+		
+
+		&-box{
+			display: inline-block;
+			width: 30%;
+			vertical-align: top;
+
+			&_margin{
+				margin-right: 3.9%;
+			}
+
+			&-img{
+				position: inherit;
+				width: 380px;/*105.7%*/
+				height: 240px;
+				background-color: rgb(123, 133, 209);
+
+				&-num{
+					width: 4.5%;
+					height: 10.9%;
+					background: rgb(149,225,211);
+					margin:12% 0 0 -0.5%;
+					position: absolute;/*почему не сработал верхний margin и пришлось абсолютить*/
+
+					&:hover{
+						background: rgba(25, 166, 145,0.5);
+					}
+
+					&-text{
+						color: #fff;
+						text-align: center;
+						font-size: 25px;
+						font-family: m-b;
+						padding-top: 17%;
+					}
+
+					span{
+						display: block;
+						color: #fff;
+						text-align: center;
+						font-size: 12px;
+						font-family: r-i;
+
+						}
+					}
+				}
+
+			&-news{
+				display: block;
+				text-decoration: none;
+				color: #000;
+				font-size: 10px;
+				font-family: m-b;
+				text-transform: uppercase;
+				padding: 2.7% 0 2.8% 0;
+
+				&:hover{
+					color: rgb(245, 27, 7);
+					transition: 0.1s all ease;
+				}
+			}
+
+			&-text{
+				padding-bottom: 4.4%;
+				border-bottom: 2px solid rgb(229,229,229);
+				font-size: 12px;
+				font-family: r-r;
+				color: rgb(160,160,160)
+			}
+
+			&-click{
+				font-size: 0;
+
+				&-img{
+					margin-right: 1.4%;
+					margin-top: 4.7%;
+
+					&_margin{
+						margin-left: 5%;
+				}
+			}
+		}
+				&-numb{
+					text-decoration: none;
+					color: rgb(208,208,208);
+					font-size: 12px;
+					font-family: r-i;
+
+					&:hover{
+						color: #000;
+						transition: 0.1s all ease;
+					}
+				}
+			}
+		}
+	}

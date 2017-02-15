@@ -1,0 +1,32 @@
+.devices{
+	/*padding-top:*/
+	background: url(../img/devices/screen-bg.png);
+	&__head{
+		.up-title;
+	}
+
+	&__foot{
+		.down-title;
+	}
+
+	&__line{
+		.red_row();
+		padding-bottom: 45px;
+	}
+
+	&__max-phone{
+		background: url(../img/devices/display.png) no-repeat;
+		width: percentage(480/@layout-width-middle);
+		height: 580px;/*почему не смог задать в %*/
+		margin-left: percentage(310/@layout-width-middle);
+	}
+
+	&__mini-phone{
+		position: absolute;
+		background: url(../img/devices/phone.png) no-repeat;
+		width: percentage(250/@layout-width-middle);;
+		height: 70%;
+		margin-left: percentage(598/@layout-width-middle);
+		margin-top: -28.6%;
+	}
+}

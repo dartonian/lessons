@@ -1,0 +1,119 @@
+.team{
+	padding-bottom: 120px;
+	font-size: 0;
+
+	&__head{
+		.up-title;
+	}
+
+	&__foot{
+		.down-title;
+	}
+
+	&__line{
+		.red_row();
+	}
+
+	&__text{
+		.text-roboto;
+		padding: 3.77% 0 7.9%;
+	}
+
+	&__box{
+		display: inline-block;
+
+		&_margin{
+			margin-left: 55px;
+		}
+		
+
+		&_foot{
+			position: inherit;
+			display: inline-block;
+			height: 470px;
+			width: 350px; 
+			background: rgb(149,225,211);
+		}
+
+		&_left{
+			position: absolute;
+			display: inline-block;
+			height: 73%;
+			width: 350px;
+			background: url(../img/team/image-1.png) no-repeat center;
+			vertical-align: top;
+			margin-left: -365px;
+			margin-top: -10px; 
+		}
+
+		&_center{
+			display: inline-block;
+			height: 470px;
+			width: 350px;
+			background: url(../img/team/image-2.png) no-repeat center;
+		}
+
+		&_right{
+			display: inline-block;
+			height: 470px;
+			width: 350px;/*хрень получается когда задаешь в px*/ 
+			background: url(../img/team/image-3.png) no-repeat center;
+		}
+
+		&-name{
+		font-size:13px;
+		font-family: m-r;
+		text-align: center;
+		text-transform: uppercase;
+		padding: 30px 0 15px 0; 
+		}
+
+		&-post{
+		font-size: 14px;
+		font-family: r-i;
+		color: rgb(189,189,189);
+		text-align: center;
+		}
+
+
+		&-menu{
+			background-color: rgb(252,227,138);
+			width: 62.86%;
+			padding: 0;
+			margin: 50% auto;
+			font-size: 0;
+
+			&-item{
+
+				display: inline-block;
+				width: 25%;
+				height: 55px;
+				border-right: 1px solid rgb(249,189,135);
+				box-sizing: border-box;
+				text-decoration: none;
+
+				&:hover{
+					background-color: rgba(255, 255, 252, 0.5);
+					transition: 0.4s all ease;
+				}
+
+				&_facebook{
+					background: url(../img/team/face-icon-copy.png) no-repeat center;
+				}
+
+				&_twitter{
+					background: url(../img/team/twit-icon.png) no-repeat center;
+				}
+
+				&_pinterest{
+					background: url(../img/team/pint-icon.png) no-repeat center;
+				}
+
+				&_instagram{
+					background: url(../img/team/inst-icon.png) no-repeat center;
+					border-right: 0;
+				}
+			}
+		}
+	}
+}
